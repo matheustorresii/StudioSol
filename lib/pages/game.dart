@@ -86,7 +86,7 @@ class _GameState extends State<Game> {
       return ApiNumber.fromJson(json.decode(response.body));
     } else {
       setState(() {
-        title = 'Erro!';
+        title = 'Erro';
         buttonVisibility = true;
         buttonEnabled = false;
         stringArray = ['5', '0', '2'];
@@ -144,7 +144,7 @@ class _GameState extends State<Game> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Qual é o número'),
+        title: Text('Qual é o número?'),
         backgroundColor: mainColor,
         actions: <Widget>[
           IconButton(
